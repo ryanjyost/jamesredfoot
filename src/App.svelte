@@ -13,9 +13,9 @@
 	<p>
 		<a style="color: #fff;" href="mailto:jamesredfootproductions@gmail.com">JamesRedfootProductions@gmail.com</a>
 	</p>
-	<p>
-		412.841.1697
-	</p>
+<!--	<p>-->
+<!--		412.841.1697-->
+<!--	</p>-->
 	<br/>
 	<br/>
 	<p>Read our scripts at <a href="https://yostandsharp.com">yostandsharp.com</a></p>
