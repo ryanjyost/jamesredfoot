@@ -3,8 +3,8 @@
 </script>
 
 <main>
-	<h1 class="red">James</h1>
-	<h1 class="red">Redfoot</h1>
+	<h1 class="red">James Redfoot</h1>
+<!--	<h1 class="red">Redfoot</h1>-->
 	<h1>Productions</h1>
 
 	<br/>
@@ -27,7 +27,7 @@
 		padding: 1em;
 		padding-top: 100px;
 		width: 100%;
-		max-width: 600px;
+		max-width: 600px !important;
 		margin: 0 auto;
 	}
 
