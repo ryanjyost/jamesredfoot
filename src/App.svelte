@@ -3,23 +3,58 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1 class="red">James</h1>
+	<h1 class="red">Redfoot</h1>
+	<h1>Productions</h1>
+
+	<br/>
+	<br/>
+	<br/>
+	<p>
+		<a style="color: #fff;" href="mailto:jamesredfootproductions@gmail.com">JamesRedfootProductions@gmail.com</a>
+	</p>
+	<p>
+		412.841.1697
+	</p>
+	<br/>
+	<br/>
+	<p>Read our scripts at <a href="https://yostandsharp.com">yostandsharp.com</a></p>
 </main>
 
 <style>
+
 	main {
-		text-align: center;
 		padding: 1em;
-		max-width: 240px;
+		padding-top: 100px;
+		width: 100%;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: rgba(255, 255, 255, 0.5);
 		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+		font-size: 2.5em;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		letter-spacing: 0.03em;
+		font-weight: 700;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	p {
+		color: #fff;
+	}
+
+	.red {
+		color: #ff3e00;
+		opacity: 0.9;
+		font-weight: 700;
+		color: rgba(255, 255, 255, 1);
 	}
 
 	@media (min-width: 640px) {
