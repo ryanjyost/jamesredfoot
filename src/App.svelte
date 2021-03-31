@@ -1,5 +1,12 @@
 <script>
 	export let name;
+
+	const peeps = [
+		{name: 'Corey Sharp', image: 'corey.png', title: 'Producer/Writer'},
+		{name: 'Ryan Yost', image: 'yost.jpeg', title: 'Producer/Writer'},
+		{name: 'Ellie Free', image: 'ellie.jpeg', title: 'Creative Director'},
+		{name: 'Daniel Allweiss', image: 'allweiss.jpeg', title: 'Line Producer/Manager'}
+	]
 </script>
 
 <main>
@@ -8,20 +15,73 @@
 	<h1>Productions</h1>
 
 	<br/>
-	<br/>
-	<br/>
 	<p>
 		<a style="color: #fff;" href="mailto:jamesredfootproductions@gmail.com">JamesRedfootProductions@gmail.com</a>
 	</p>
-<!--	<p>-->
-<!--		412.841.1697-->
-<!--	</p>-->
+
 	<br/>
 	<br/>
-	<p>Read our scripts at <a href="https://yostandsharp.com">yostandsharp.com</a></p>
+	<br/>
+
+	<hr/>
+	<br/>
+	<h2>What we're working on.</h2>
+
+	<h4><strong><i>Everybody's got their Demons</i></strong></h4>
+	<p>
+		<i>
+			An animated comedy series about a degenerate who grapples with her religious faith and opts to pursue nunhood to escape the torment of diabolically creative demons who will stop at nothing to make her and everyone else succumb to the dark side of life.
+		</i>
+		<i><u><a href="https://yostandsharp.com/scripts/demons">Click to read the script.</a></u></i>
+	</p>
+
+	<br/>
+	<p>Read our other scripts at <a href="https://yostandsharp.com">yostandsharp.com</a></p>
+	<br/>
+	<hr/>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+	<h2>Our team, so far...</h2>
+	<div id="peepsContainer">
+		{#each peeps as peep}
+		<div class="peep">
+			<img src="{`/images/${peep.image}`}" width="100%" height="auto"/>
+			<h4><strong>{peep.name}</strong>, {peep.title}</h4>
+			<br/>
+			<br/>
+		</div>
+		{/each}
+	</div>
 </main>
 
 <style>
+
+	#peepsContainer {
+		/*display:flex;*/
+		/*!*flex-direction: column;*!*/
+		/*align-items: center;*/
+	}
+
+	.peep {
+		/*margin: 20px;*/
+	}
+
+	hr {
+		background-color: rgba(255, 255, 255, 0);
+		border-color: rgba(255, 255, 255, 0.3);
+		box-shadow: none;
+		outline: none;
+		border-style: solid;
+	}
+
+	img {
+		max-width: 200px;
+		border-radius: 5px;
+	}
 
 	main {
 		padding: 1em;
@@ -41,9 +101,18 @@
 		font-weight: 700;
 	}
 
+	h2 {
+		color: rgba(255, 255, 255, 1);
+		margin-bottom: 40px;
+	}
+
+	h3, h4 {
+		color: #fff;
+		font-weight: normal;
+	}
+
 	a {
 		color: #fff;
-		text-decoration: underline;
 	}
 
 	p {
